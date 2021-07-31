@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".Weight">
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="335dp"
+        android:layout_height="393dp"
+        android:layout_marginBottom="16dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="335dp"
+            android:layout_height="41dp"
+            android:layout_marginTop="40dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/et1"
+                android:layout_width="125dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:ems="10"
+                android:gravity="center|left"
+                android:hint="Cubic Meter"
+                android:inputType="number"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#BDB6B6" />
+
+            <ImageView
+                android:id="@+id/img1"
+                android:layout_width="wrap_content"
+                android:layout_height="41dp"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/arrow" />
+
+            <TextView
+                android:id="@+id/tv1"
+                android:layout_width="125dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:hint="Cubic CM:"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#BDB6B6"
+                android:textSize="18sp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="335dp"
+            android:layout_height="41dp"
+            android:layout_marginTop="40dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/et2"
+                android:layout_width="125dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:ems="10"
+                android:gravity="center|left"
+                android:hint="Value in C"
+                android:inputType="number"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#BDB6B6" />
+
+            <ImageView
+                android:id="@+id/img2"
+                android:layout_width="wrap_content"
+                android:layout_height="41dp"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/arrow" />
+
+            <TextView
+                android:id="@+id/tv2"
+                android:layout_width="125dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:hint="Value in F:"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#BDB6B6"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:text="Volume"
+        android:textColor="#FFFFFF"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:fontFamily="@font/audiowide"
+        app:layout_constraintBottom_toTopOf="@+id/image"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.29" />
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="186dp"
+        android:layout_height="147dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/volume" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
